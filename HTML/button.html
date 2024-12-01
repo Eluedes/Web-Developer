@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <form method="get">
+        <label>Nome:</label><input type="text"><br>
+        <label>Idade:<input type="number"><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o Cargo</option>
+            <option value="ADM">Administrador</option>
+            <option value="GM">Game Master</option>
+            <option value="MOD">Moderador</option>
+            <option value="HELP">Helper</option>
+        </select><br>
+        <label>Assunto:<input type="text"><br>
+        <label>Mensagem:</label>
+        <textarea rows="10" cols="100" name="message"></textarea><br>
+
+        <button type="button">Clique aqui</button><br>
+        <button type="reset">Limpar</button><br>
+        <button type="submit">Enviar</button><br>
+    </form>
+</body>
+</html>
