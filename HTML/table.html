@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR">
+<!-- Início do documento HTML, com o idioma definido como português -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8, suportando a maioria dos caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a visualização da página para dispositivos móveis -->
+    <title>Trabalhando com Tabelas</title>
+    <!-- Título da página exibido na aba do navegador -->
+    
+    <style>
+        /* Estilos CSS para a tabela */
+        table {
+            -webkit-box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26); 
+            box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26);
+            /* Adiciona sombra à tabela */
+            border: solid 1px black;
+            /* Adiciona uma borda preta à tabela */
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+            /* Define o fundo preto e o texto branco para os cabeçalhos */
+        }
+        table tfoot td {
+            background-color: lightgray;
+            /* Define o fundo cinza claro para o rodapé da tabela */
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+            /* Adiciona um fundo alternado para as linhas pares do corpo da tabela */
+        }
+        table tbody tr:hover td {
+            background-color: #e9e9e9;
+            cursor: pointer;
+            /* Muda a cor do fundo quando o cursor passa por cima de uma linha */
+        }
+    </style>
+</head>
+
+<body>
+    <table width="150" align="center" cellspacing="0" cellpadding="5">
+        <!-- Cria a tabela, define a largura, alinha ao centro, e ajusta o espaçamento e o preenchimento -->
+        
+        <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+                <!-- Cabeçalho principal da tabela, ocupa duas colunas -->
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <!-- Cabeçalho com título e tooltip para a coluna "Nome" -->
+                <th>Idade</th>
+                <!-- Cabeçalho para a coluna "Idade" -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Corpo da tabela -->
+            <tr>
+                <td>Rafael</td>
+                <td>27</td>
+                <!-- Dados de uma linha: nome e idade -->
+            </tr>
+            <tr>
+                <td>Juliana</td>
+                <td>37</td>
+                <!-- Dados de uma linha: nome e idade -->
+            </tr>
+            <tr>
+                <td>Zé</td>
+                <td>47</td>
+                <!-- Dados de uma linha: nome e idade -->
+            </tr>
+            <tr>
+                <td>Joana</td>
+                <td>57</td>
+                <!-- Dados de uma linha: nome e idade -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- Rodapé da tabela -->
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+                <!-- Total de registros na tabela -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
