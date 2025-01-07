@@ -5,6 +5,8 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: "Nunito", serif;
+
 }
 
 .wrapper {
@@ -20,11 +22,11 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #166C67;
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #1CB575;
     min-height: 150px;
 }
 .content {
@@ -32,7 +34,36 @@ body {
     min-height: 300px;
     padding: 20px;
 }
+.content h1 {
+    color: #166C67;
+}
+.content h2 {
+    color: #166C67;
+}
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: #2DC772;
     min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+.footer img {
+    margin-right: 15px;
+}
+.foot {
+    color: white;
+
+}
+.destaque {
+    color: #166C67;
+    
+}
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+li a:hover {
+    background-color: white;
+}
+.p1 {
+    text-align: center;
 }
