@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 html, body {
     margin: 0;
 }
@@ -41,21 +43,36 @@ body {
     color: #166C67;
 }
 .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #2DC772;
     min-height: 150px;
-    display: flex;
-    align-items: center;
+    color: white;
 }
 .footer img {
-    margin-right: 15px;
+    width: 120px;
+    height: auto;
 }
 .foot {
-    color: white;
-
+    flex: 1;
+}
+.endereco {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.endereco p {
+    margin: 0;
 }
 .destaque {
-    color: #166C67;
-    
+    color: #166C67; 
 }
 li a {
     text-decoration: none;
@@ -66,4 +83,21 @@ li a:hover {
 }
 .p1 {
     text-align: center;
+}
+table {
+    -webkit-box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26); 
+    box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26);
+    border: solid 1px black;
+}
+table thead th {
+    background-color: lightgreen;
+    color: white;
+}
+table tbody tr:nth-child(even) td {
+    background-color: #c72121;
+}
+table tbody tr:hover td {
+    background-color: #e9e9e9;
+    cursor: pointer;
+    /* Muda a cor do fundo quando o cursor passa por cima de uma linha */
 }
