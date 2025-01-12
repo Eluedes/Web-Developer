@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 html, body {
     margin: 0;
 }
@@ -27,6 +25,13 @@ body {
     background-color: #166C67;
     padding: 10px 20px 0px;
 }
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu li a:hover {
+    background-color: white;
+}
 .header {
     background-color: #1CB575;
     min-height: 150px;
@@ -35,12 +40,39 @@ body {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+    text-align: center;
 }
 .content h1 {
     color: #166C67;
 }
 .content h2 {
     color: #166C67;
+}
+.content table {
+    -webkit-box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26); 
+    box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26);
+    border: solid 1px black;
+}
+.content table thead th {
+    background-color: lightgreen;
+    color: white;
+}
+
+.content table tbody tr:hover td {
+    background-color: #020202;
+    cursor: pointer;
+
+}
+.content table tbody tr:nth-child(even) td {
+    background-color: #20c472;
+
+}
+.content table tbody tr:hover td {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+.content label {
+    align-items: center;
 }
 .footer {
     display: flex;
@@ -62,7 +94,6 @@ body {
 .endereco {
     width: 100%;
     text-align: center;
-    width: 100%;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -71,33 +102,17 @@ body {
 .endereco p {
     margin: 0;
 }
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
 .destaque {
     color: #166C67; 
 }
-li a {
+.dev a {
     text-decoration: none;
     color: inherit;
-}
-li a:hover {
-    background-color: white;
-}
-.p1 {
-    text-align: center;
-}
-table {
-    -webkit-box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26); 
-    box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26);
-    border: solid 1px black;
-}
-table thead th {
-    background-color: lightgreen;
-    color: white;
-}
-table tbody tr:nth-child(even) td {
-    background-color: #c72121;
-}
-table tbody tr:hover td {
-    background-color: #e9e9e9;
-    cursor: pointer;
-    /* Muda a cor do fundo quando o cursor passa por cima de uma linha */
 }
