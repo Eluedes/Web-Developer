@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5 - Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: lightblue;
+        }
+        blockquote {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin-left: 0px;
+            border-left: red solid 5px;
+        }
+        article time {
+            font-style: italic;
+        }
+        article q {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="tel:+550000000000">Telefone</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+           <h1>Testes de tags</h1>
+           <p>Teste criado em <time pubdate>19/01/2025 07:00</time></p>
+           <p>Teste com as novas tags semântica do HTML5, <q cite="http://dio.me">Onde você aprende bem na DIO.ME</q></p>
+           <blockquote cite="http://test.test">
+            <p>Não perca seu foco, sempre busque melhorias para sua vida.</p>
+           </blockquote>
+        </article>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <aside></aside>
+    </main>
+    <footer></footer>
+</body>
+</html>
