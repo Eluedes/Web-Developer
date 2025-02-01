@@ -1,75 +1,123 @@
+/* Reset básico */
 html, body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
-    font-family: "Nunito", serif;
-
+    font-family: "Nunito", sans-serif;
 }
 
+/* Estrutura principal */
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
     background-color: aquamarine;
 }
+
 .main {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     width: 85%;
 }
+
+/* Menu lateral */
 .menu {
     width: 15%;
     background-color: #166C67;
     padding: 10px 20px 0px;
 }
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .menu li a {
     text-decoration: none;
     color: inherit;
+    display: block;
+    padding: 5px 0;
 }
+
 .menu li a:hover {
     background-color: white;
+    color: #166C67;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
+/* Cabeçalho */
 .header {
     background-color: #1CB575;
     min-height: 150px;
 }
+
+/* Conteúdo */
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
     text-align: center;
 }
-.content h1 {
-    color: #166C67;
-}
+
+/* Títulos do conteúdo */
+.content h1, 
 .content h2 {
     color: #166C67;
 }
+
+/* Estilização da tabela */
 .content table {
-    -webkit-box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26); 
-    box-shadow: 9px 11px 6px 5px rgba(0,0,0,0.26);
-    border: solid 1px black;
+    width: 80%; /* Ajusta a largura da tabela */
+    border-collapse: collapse; /* Remove espaçamentos entre as células */
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Centraliza a tabela na página */
 }
+
+/* Cabeçalho da tabela */
 .content table thead th {
-    background-color: lightgreen;
+    background-color: #166C67;
     color: white;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto no cabeçalho */
 }
 
-.content table tbody tr:hover td {
-    background-color: #020202;
+/* Corpo da tabela */
+.content table tbody tr {
+    background-color: #ffffff; /* Cor padrão das linhas */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+/* Linhas pares com fundo alternado */
+.content table tbody tr:nth-child(even) {
+    background-color: #62646446; /* Mantendo a cor original */
+}
+
+/* Efeito hover nas linhas da tabela */
+.content table tbody tr:hover {
+    background-color: #034e234b; /* Mantendo a cor original */
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
 
+/* Células da tabela */
+.content table td, 
+.content table th {
+    padding: 12px;
+    border: 1px solid #000; /* Borda entre as células */
+    text-align: center; /* Centraliza o conteúdo dentro das células */
 }
-.content table tbody tr:nth-child(even) td {
-    background-color: #20c472;
 
-}
-.content label {
-    align-items: center;
-}
+/* Rodapé */
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -80,13 +128,17 @@ body {
     min-height: 150px;
     color: white;
 }
+
 .footer img {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
+
 .foot {
     flex: 1;
 }
+
+/* Endereço no rodapé */
 .endereco {
     width: 100%;
     text-align: center;
@@ -95,9 +147,12 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
 .endereco p {
     margin: 0;
 }
+
+/* Contato */
 .contact {
     width: 100%;
     text-align: center;
@@ -105,10 +160,21 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
+/* Texto destacado */
 .destaque {
-    color: #166C67; 
+    color: #166C67;
+    font-weight: bold;
 }
+
+/* Links */
 .dev a {
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
+}
+
+.dev a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
