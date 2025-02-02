@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca em Texto</title>
+</head>
+<body>
+    <input type="text" id="busca" placeholder="Digite para Buscar.."><br>
+    <p id="descricao"> Olá! Meu nome é Rafael Guedes e sou um estudante de Front-end pela DIO.me. Tenho interesse em desenvolvimento web e atualmente estou aprimorando minhas habilidades em HTML, CSS, JavaScript e Ruby. Além disso, gosto de explorar novas tecnologias e desafios que me ajudem a crescer como desenvolvedor.
+
+    </p>
+    <script>
+        var buscaField = document.getElementById('busca');
+        var descricaoObject = document.getElementById('descricao');
+        var textToSearch = descricaoObject.innerHTML;
+
+        function realizaBusca(busca) {
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descricaoObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+        }
+
+        buscaField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+</body>
+</html>
