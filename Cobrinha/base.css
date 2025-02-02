@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+canvas {
+    border: 1px solid black;
+}
+#score {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
