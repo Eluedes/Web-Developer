@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GamePédia - Página Principal</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-    <header>   
+<body class="padrao">
+
+    <header>
         <figure class="logo">
-            <img src="assets/images/logo.png" alt="Logo da GamePédia" width="200"/>
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo da GamePédia" width="200" /></a>
         </figure>
     </header>
 
-    <div class="bar"></div>
+    <!-- <div class="bar"></div> -->
 
     <main class="content">
-        <nav class="sidebar" aria-labelledby="historia-de-games">
+        <nav class="card sidebar" aria-labelledby="historia-de-games">
             <h2 id="historia-de-games">História de Games</h2>
             <ul>
-                <li><a href="#" aria-label="Informações sobre o jogo Tennis for Two">Tennis for Two</a></li>
-                <li><a href="#" aria-label="Informações sobre o jogo Spacewar">Spacewar</a></li>
+                <li>
+                    <a class="buttom-card" href="#" aria-label="Informações sobre o jogo Tennis for Two"><p>Tennis for Two</p></a>
+                </li>
+                <li>
+                    <a class="buttom-card" href="#" aria-label="Informações sobre o jogo Spacewar"><p>Spacewar</p></a>
+                </li>
             </ul>
         </nav>
 
-        <article aria-labelledby="conteudo-principal">
+        <article class="card" aria-labelledby="conteudo-principal">
             <h1 id="conteudo-principal">Sobre o GamePédia</h1>
-                <p>
-                    O GamePédia foi criado para ser um ponto de referência e um verdadeiro guia para todos os apaixonados por games. Idealizado por Rafael Guedes e desenvolvido pela Guedes Forge, uma empresa dedicada à inovação digital e ao desenvolvimento de projetos que conectam pessoas ao universo dos jogos, o GamePédia nasceu com o propósito de oferecer uma plataforma abrangente para jogadores e desenvolvedores de todos os níveis. 
-                </p>
+            <p>
+                O GamePédia foi criado para ser um ponto de referência e um verdadeiro guia para todos os apaixonados
+                por games. Idealizado por Rafael Guedes e desenvolvido pela Guedes Forge, uma empresa dedicada à
+                inovação digital e ao desenvolvimento de projetos que conectam pessoas ao universo dos jogos, o
+                GamePédia nasceu com o propósito de oferecer uma plataforma abrangente para jogadores e desenvolvedores
+                de todos os níveis.
+            </p>
+            <hr>
+            <h2 id="criado">Por que o GamePédia foi criado?</h2>
+            <p>
+                Com a crescente popularidade dos videogames e o surgimento de novas plataformas, tecnologias e
+                tendências, o GamePédia foi idealizado como uma resposta à necessidade de uma fonte confiável,
+                organizada e acessível de informações sobre jogos. A proposta é ir além das simples análises de jogos,
+                oferecendo conteúdos exclusivos que abrangem desde análises detalhadas até dicas sobre como desenvolver
+                games, criar mods e personalizações, e até mesmo como entender o funcionamento da indústria de jogos
+                como um todo.
+            </p>
         </article>
 
-        <nav class="anchors" aria-labelledby="ancoras-neste-artigo">
+        <aside class="card anchors" aria-labelledby="ancoras-neste-artigo">
             <h2 id="ancoras-neste-artigo">Neste Artigo</h2>
             <ul>
-                <li><a href="#ancoras" aria-label="Ir para a seção de Âncoras">Âncoras</a></li>
+                <li>
+                    <a class="buttom-card" href="#ancoras" aria-label="Ir para a seção de Âncoras"><p>Âncoras</p></a>
+                </li>
             </ul>
-        </nav>
+        </aside>
     </main>
 
     <footer role="contentinfo">
         <p>&copy; 2025 GamePédia - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
